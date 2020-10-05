@@ -1,0 +1,24 @@
+@each $name, $size in $list-size {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
+
+@each $name, $width in $list-width {
+    .dimen-#{$name} {
+        width: $width;
+    }
+}
+
+@each $name, $heigth in $list-heigth {
+    .dimen-#{$name} {
+        height: $heigth;
+    }
+}
+
+@each $name, $position in $list-posrel {
+    .pos-rel-bot-#{$name} {
+        position: relative;
+        bottom: $position;
+    }
+}

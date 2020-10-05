@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* Background color */
+/* Couleurs polices d'écriture */
+/* Size */
+/* Width */
+/* Heigth */
+/* Position relative */
+/* Article */
+/* Font-size */
+/* Background-color */
+.text-xs-small {
+  font-size: 0.5em;
+}
+
+.text-s-small {
+  font-size: 0.6em;
+}
+
+.text-small {
+  font-size: 1em;
+}
+
+.text-xs-medium {
+  font-size: 1.1em;
+}
+
+.text-medium {
+  font-size: 2em;
+}
+
+.text-large {
+  font-size: 4em;
+}
+
+.text-xl-large {
+  font-size: 8em;
+}
+
+.dimen-width-btn {
+  width: 35px;
+}
+
+.dimen-widthfull {
+  width: 100%;
+}
+
+.dimen-widthcinqcentpx {
+  width: 500px;
+}
+
+.dimen-large-width {
+  width: 600px;
+}
+
+.dimen-xl-large-width {
+  width: 900px;
+}
+
+.dimen-calcwidth85 {
+  width: calc(100% - 50px);
+}
+
+.dimen-heigthfull {
+  height: 100%;
+}
+
+.dimen-height-75 {
+  height: 75%;
+}
+
+.dimen-heigthcinqcentpx {
+  height: 500px;
+}
+
+.dimen-large-heigth {
+  height: 600px;
+}
+
+.dimen-xl-large-heigth {
+  height: 900px;
+}
+
+.dimen-calcheigth85 {
+  height: calc(100% - 50px);
+}
+
+.pos-rel-bot-small {
+  position: relative;
+  bottom: 4px;
+}
+
+.pos-rel-bot-medium {
+  position: relative;
+  bottom: 8px;
+}
+
+.pos-rel-bot-large {
+  position: relative;
+  bottom: 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-color: #fdfbfd;
+  box-sizing: border-box;
+  flex: 1 0 auto;
+}
+
+body, input[type=number] {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.footer {
+  min-width: 1024px;
+}
+
+.fontfooter {
+  color: #b1aab0;
+}
+
+.footer1, .text-lien {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.footer1 {
+  height: 80px;
+}
+
+.text-lien {
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.rejoindre p, .rejoindre i {
+  margin: 10px;
+}
+.rejoindre i {
+  font-size: 2em;
+}
+
+/* main {
+    width: 100%;
+}
+ */
+.article-produit {
+  width: 90%;
+  max-width: 1300px;
+  min-height: 710px;
+  flex-wrap: wrap;
+}
+
+.padding_lr {
+  padding: 0 55px;
+}
+
+.items {
+  width: 400px;
+  height: 450px;
+  margin: 10px;
+  padding: 0 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.items figure {
+  width: 360px;
+  height: 200px;
+  border: 1px dashed #8f5bfe;
+}
+.items figure img {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 20px;
+  border: 1px solid #8f5bfe;
+}
+.items .title, .items .title a {
+  color: #e88d08;
+}
+.items .title {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.items .title a:hover {
+  color: #8f5bfe;
+}
+.items .summary {
+  font-size: 1em;
+  text-align: justify;
+  padding: 0 20px 0 20px;
+}
+.items .shopping {
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.items .shopping .qty, .items .shopping .signe, .items .shopping .fa-shopping-cart, .items .shopping .add, .items .shopping .price, .items .shopping .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.items .shopping .number-article, .items .shopping .add, .items .shopping .price, .items .shopping .signe {
+  font-weight: 700;
+}
+.items .shopping .btn {
+  background-color: #fffdff;
+}
+.items .shopping .number-article {
+  width: 80px;
+  text-align: center;
+  font-size: 1.2em;
+}
+.items .shopping input {
+  border: #8f5bfe;
+  color: #8f5bfe;
+  background-color: transparent;
+  width: 50%;
+  height: 28px;
+  line-height: 10px;
+  margin-right: 5px;
+}
+.items .shopping .qty {
+  width: 70%;
+  overflow: hidden;
+  height: 45px;
+}
+.items .shopping .qty input[type=button]:hover {
+  color: #fffdff;
+  background-color: #8f5bfe;
+}
+.items .shopping .btn {
+  width: 150px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+.items .shopping .btn p {
+  width: 100%;
+  height: 100%;
+  color: #8f5bfe;
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.items .shopping .btn :hover {
+  background-color: #8f5bfe;
+  color: #fffdff;
+}
+.items .shopping .price {
+  color: #8f5bfe;
+  font-size: 1.5em;
+}
+.items .shopping .price, .items .shopping .qty {
+  margin: 0 2px;
+}
+.items .shopping .btn, .items .shopping .qty input {
+  border: 1px solid #8f5bfe;
+}
+.items .shopping .qty, .items .shopping .qty .signe, .items .shopping .btn {
+  height: 30px;
+}
+.items .addbutton-label {
+  display: none;
+}
+
+.menu-produit,
+main,
+footer,
+.rejoindre,
+.article-produit,
+.user,
+.search,
+.mail-bar,
+.ok-btn-mail,
+.btn p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-menu,
+.footer1,
+.shopping,
+.text-lien {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+footer,
+.bar-menu {
+  background-color: #f3e9f1;
+}
+
+input, button {
+  background-color: #fffdff;
+  border: 1px solid #f3e9f1;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Logo */
+.logo {
+  margin: 15px 0 5px 50px;
+}
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/* Mon compte & Panier */
+.fa-user, .fa-shopping-cart {
+  margin-right: 10px;
+}
+
+/* Menu catégorie produit */
+.bar-menu {
+  align-items: center;
+  width: 100%;
+  height: 40px;
+}
+.bar-menu li {
+  cursor: pointer;
+  background-color: #f3e9f1;
+  transition: background-color 0.5s;
+}
+.bar-menu li:hover {
+  background-color: #ffeffa;
+}
+.bar-menu .active {
+  background-color: #ffeffa;
+}
+
+.menu-produit {
+  width: 100%;
+  height: 40px;
+}
+
+.mail-bar input, .mail-bar .ok-btn-mail {
+  height: 20px;
+}
+.mail-bar input {
+  font-size: 1rem;
+  color: #ded5dd;
+  padding-left: 10px;
+  border-right-color: #fffdff;
+}
+.mail-bar button {
+  border-left-color: #fffdff;
+  background-color: #8f5bfe;
+}
+.mail-bar button .ok-btn-mail {
+  width: 30px;
+  color: #fff;
+  font-size: 1rem;
+  text-shadow: 0 0 2px white;
+}
+
+.search input, .search button {
+  height: 35px;
+}
+.search input {
+  font-size: 1rem;
+  color: #ded5dd;
+  padding-left: 10px;
+  border-right-color: #fffdff;
+}
+.search button {
+  border-left-color: #fffdff;
+}
+.search button .fa-search {
+  color: #f3e9f1;
+  font-size: 1.4rem;
+}
+
+.bg {
+  display: grid;
+  grid-template-columns: 280px 1fr 150px 100px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
